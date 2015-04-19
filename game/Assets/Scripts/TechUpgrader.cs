@@ -6,16 +6,8 @@ class TechUpgrader : MonoBehaviour {
   private Stockpile stockpile;
   private Technology technology;
   public UpgradeCost[] costs;
-  public bool payable;
+  public bool payable = false;
 	int toast;
-
-  void setStatus(bool active) {
-    if (active) {
-      // enable the button fully
-    } else  {
-      // disable the button such that it is not visible or clickable, but it's Update() still gets run
-    }
-  }
 
   void Start () {
     technology = GameObject.Find("/Technology").GetComponent<Technology>();
@@ -24,35 +16,19 @@ class TechUpgrader : MonoBehaviour {
     setStatus(false);
   }
 
-  void Update () {
-  /*  payable = true;
-    foreach (UpgradeCost cost in costs) {
-      if (stockpile.stocks[cost.type] < cost.amount) {
-        payable = false;
-      }
-    }
-
-    setStatus(payable);
-*/
-}
-
   public void upgrade() {
-   // if (payable) {
-      foreach (UpgradeCost cost in costs) {
-        stockpile.updateStockLevel(cost.toResourceAmount(), true);
-   //   }
+    foreach (UpgradeCost cost in costs) {
+      stockpile.updateStockLevel(cost.toResourceAmount(), true);
 
       technology.Upgrade(tech);
-		Debug.Log("upgrade");
+
       if (tech == TechnologyType.AlgaeFarm) {toast = 3;}
       if (tech == TechnologyType.SolarArray) {toast = 0;}
-      GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (toast);
-
+      GameObject.Find ("GameController").GetComponent<ToastNotifications>().ToastNotification (toast);
     }
   }
 
-  public void OnClicked(Button button)
-  {
+  public void OnClicked(Button button) {
 		button.gameObject.SetActive (false);
   }
 

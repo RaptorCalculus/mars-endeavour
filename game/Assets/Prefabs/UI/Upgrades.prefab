@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 6
-  amount: 25
+  amount: 40
 --- !u!114 &11412856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
-  amount: 25
+  amount: 40
 --- !u!114 &11471494
 MonoBehaviour:
   m_ObjectHideFlags: 1
