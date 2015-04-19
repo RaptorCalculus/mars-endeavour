@@ -139,6 +139,7 @@ MonoBehaviour:
   Surface_PIP: {fileID: 0}
   CamToggleState: 0
   min2day: 1
+  select: {fileID: 8300000, guid: 9ab2cf322d760a84c9dfdacfba92de9a, type: 3}
   UiMartianDays: {fileID: 0}
 --- !u!114 &11476462
 MonoBehaviour:

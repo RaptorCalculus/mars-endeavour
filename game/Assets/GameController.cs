@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour {
 	public bool CamToggleState = false;
 	Camera currentRobotCam;
 	public float min2day = 1;
+	public AudioClip select;
 	
 	// How many seconds the user has played the game.
 	private int numSecondsPlayed = 0;
@@ -49,6 +50,7 @@ public class GameController : MonoBehaviour {
 	}
 	
 	void Update () {
+		if (Input.GetKey(KeyCode.Escape)) { Application.Quit(); }
 		
 		if (Input.GetMouseButtonDown (0) && !EventSystem.current.IsPointerOverGameObject()) {
 			
@@ -166,6 +168,7 @@ public class GameController : MonoBehaviour {
 	public void SwitchRobot(GameObject newRobot){
 		DeselectRobot ();
 		currentRobot = newRobot;
+		audio.PlayOneShot (select);
 		if (currentRobot != null) {
 			currentRobot.transform.GetChild (3).gameObject.SetActive (true);				//Turn ON Object Highlighter
 
