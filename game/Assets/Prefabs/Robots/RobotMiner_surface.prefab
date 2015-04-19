@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMining: 1
-  sparks: {fileID: 100000, guid: 0784458ec5be243079ea5543df76b9d5, type: 2}
+  sparks: {fileID: 118604, guid: 082c4a20e803249d2aba9ab704cd4f37, type: 2}
   laserMat: {fileID: 2100000, guid: 8e7181c3aead74fde99167a233507cdc, type: 2}
   skew: .5
 --- !u!114 &11435582
