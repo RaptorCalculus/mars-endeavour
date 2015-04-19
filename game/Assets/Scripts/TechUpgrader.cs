@@ -13,7 +13,7 @@ class TechUpgrader : MonoBehaviour {
     technology = GameObject.Find("/Technology").GetComponent<Technology>();
     stockpile = GameObject.Find("/Stockpile").GetComponent<Stockpile>();
     costs = GetComponents<UpgradeCost>();
-    setStatus(false);
+//    setStatus(false);
   }
 
   public void upgrade() {

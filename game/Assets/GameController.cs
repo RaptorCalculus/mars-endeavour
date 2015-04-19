@@ -122,7 +122,7 @@ public class GameController : MonoBehaviour {
 							firstOre = true;
 							GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (6);
 						}
-						currentRobot.GetComponent<MineSequence>().Mine(hitInfo.point);
+						currentRobot.GetComponent<MineSequence>().Mine(hitInfo.point, hitInfo.transform.gameObject);
 						currentRobot.GetComponent<ResourceOutput>().type = ResourceType.Ore;
 						currentRobot.GetComponent<ResourceConverter>().online = true;
 
@@ -134,7 +134,7 @@ public class GameController : MonoBehaviour {
 							firstIce = true;
 							GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (7);
 						}
-						currentRobot.GetComponent<MineSequence>().Mine(hitInfo.point);
+						currentRobot.GetComponent<MineSequence>().Mine(hitInfo.point, hitInfo.transform.gameObject);
 						currentRobot.GetComponent<ResourceOutput>().type = ResourceType.Ice;
 						currentRobot.GetComponent<ResourceConverter>().online = true;
 

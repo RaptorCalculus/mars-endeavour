@@ -46,8 +46,8 @@ MonoBehaviour:
   IceStock: {fileID: 0}
   AlgaeUpgradeButton: {fileID: 0}
   SolarUpgradeButton: {fileID: 0}
-  AlgaeUpgradeThreshold: 15
-  SolarUpgradeThreshold: 15
+  AlgaeUpgradeThreshold: 2
+  SolarUpgradeThreshold: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

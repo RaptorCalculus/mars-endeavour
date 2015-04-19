@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
     m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0}
-    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: .58431375}
     m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
@@ -124,8 +124,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 97, y: 73.3600006}
-  m_SizeDelta: {x: 200, y: 150}
+  m_AnchoredPosition: {x: 100.029999, y: 73.1999969}
+  m_SizeDelta: {x: 200.899994, y: 150}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000
 Prefab:

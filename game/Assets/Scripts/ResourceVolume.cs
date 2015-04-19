@@ -3,9 +3,9 @@ using System.Collections;
 
 public class ResourceVolume : MonoBehaviour {
 
-	public int volume = 1;
+	public float volume = 1;
 	public float respawnTimeSec = 180;
-	int volumeStart;
+	float volumeStart;
 
 	void Start () {
 		//DepleteOre ();
