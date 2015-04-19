@@ -32,7 +32,7 @@ public class MineSequence : MonoBehaviour {
 
 	}
 
-	public void Mine(Vector3 dest) {
+	public void Mine(Vector3 dest, GameObject oreType) {
 		
 		Debug.Log("Start Mining.");
 		
@@ -40,7 +40,11 @@ public class MineSequence : MonoBehaviour {
 		gameObject.GetComponent<Robot_surfaceMove>().moving = false;
 		audio.Play ();
 		StopCoroutine ("mineAnimation");//if already running  DOESNT SEEM TO BE STOPPING
-		StartCoroutine (mineAnimation(dest));	
+		if (oreType.name == "Model") {
+				StartCoroutine (mineAnimation (dest, oreType.transform.parent.gameObject));
+		} else {
+				StartCoroutine (mineAnimation (dest, oreType));	
+		}
 	}
 	
 	public void StopMining () {
@@ -54,7 +58,7 @@ public class MineSequence : MonoBehaviour {
 		StopCoroutine("mineAnimation");
 	}
 
-	IEnumerator mineAnimation(Vector3 dest) {
+	IEnumerator mineAnimation(Vector3 dest, GameObject oreType) {
 			while (isMining) {
 	
 					Vector3 destSkew = new Vector3 (dest.x + Random.Range (-skew, skew), dest.y + Random.Range (-skew, skew), dest.z + Random.Range (-skew, skew));
@@ -68,6 +72,14 @@ public class MineSequence : MonoBehaviour {
 					yield return new WaitForSeconds (Random.Range (.3f, 1f));
 					lineRenderer.enabled = false;
 					yield return new WaitForSeconds (Random.Range (.1f, .5f));
+
+					oreType.GetComponent<ResourceVolume>().volume -= .02f;
+					if (oreType.GetComponent<ResourceVolume>().volume <= 0){
+						isMining = false;
+						gameObject.GetComponent<ResourceConverter>().online = false;
+						audio.Stop();
+					}
+
 			}
 
 	}

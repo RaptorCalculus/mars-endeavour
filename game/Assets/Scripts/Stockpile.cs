@@ -39,10 +39,10 @@ public class Stockpile : MonoBehaviour {
     initializeResource(ResourceType.CO2, 100, 200);
     //initializeResource(ResourceType.H2, 0, 500);
     initializeResource(ResourceType.Power, 500, 1500);
-    initializeResource(ResourceType.Ore, 40, 200);
+    initializeResource(ResourceType.Ore, 0, 200);
     initializeResource(ResourceType.Metal, 0, 100);
     initializeResource(ResourceType.Silicates, 0, 100);
-    initializeResource(ResourceType.Ice, 40, 200);
+    initializeResource(ResourceType.Ice, 0, 200);
   }
 
   void Update() {
