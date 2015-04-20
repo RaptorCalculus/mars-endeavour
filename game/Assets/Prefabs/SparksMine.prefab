@@ -70,10 +70,10 @@ EllipsoidParticleEmitter:
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
-  minSize: .100000001
-  maxSize: .100000001
-  minEnergy: .5
-  maxEnergy: .5
+  minSize: .200000003
+  maxSize: .200000003
+  minEnergy: 2
+  maxEnergy: 3
   minEmission: 10
   maxEmission: 50
   worldVelocity: {x: 0, y: 0, z: 0}
@@ -124,12 +124,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 118604}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e15b47f3c8673443aacc9b3766063aee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dtime: 0
+  dtime: .600000024
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

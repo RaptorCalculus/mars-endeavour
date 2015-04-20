@@ -67,9 +67,13 @@ public class MineSequence : MonoBehaviour {
 					lineRenderer.SetPosition (0, transform.position);
 					//lineRenderer.SetPosition (1, dest);
 					lineRenderer.SetPosition (1, destSkew);
-					Instantiate (sparks, destSkew, Quaternion.identity);
+					GameObject spark = Instantiate (sparks, destSkew, Quaternion.identity) as GameObject;
+					
+					float laserWait = Random.Range (.3f, 1f);
+					Destroy(spark, laserWait * 1.5f);
+					
 					//StartCoroutine(laser_die());
-					yield return new WaitForSeconds (Random.Range (.3f, 1f));
+					yield return new WaitForSeconds (laserWait);
 					lineRenderer.enabled = false;
 					yield return new WaitForSeconds (Random.Range (.1f, .5f));
 
