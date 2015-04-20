@@ -35,7 +35,7 @@ Team
 * Angelina Lapteva
 * John Rockefeller
 * Brooke Wayne
-* The survivors and robots on Mars
+* The survivors and rovers on Mars
 
 Licenses
 -----------
