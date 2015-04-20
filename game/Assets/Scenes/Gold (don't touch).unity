@@ -8193,7 +8193,7 @@ MonoBehaviour:
   - Power Surplus!
   - Algae Farm Upgraded!
   - Freak Out!
-  - Dicovered a Lava Tube!
+  - Discovered a Lava Tube!
   - You Found Ore!
   - You Found Ice!
   - Survived Earthquake
@@ -13949,82 +13949,6 @@ MonoBehaviour:
   - {fileID: 566547579}
   - {fileID: 1145500312}
   - {fileID: 2051914823}
---- !u!1001 &663189983
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -310
-      objectReference: {fileID: 0}
-    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 135.300003
-      objectReference: {fileID: 0}
-    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 11427864, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: buildingSettlement
-      value: 
-      objectReference: {fileID: 1107675323}
-    - target: {fileID: 11427864, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: buildingSolarArray
-      value: 
-      objectReference: {fileID: 245945978}
-    - target: {fileID: 11427864, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: buildingAlgaeFarm
-      value: 
-      objectReference: {fileID: 832432803}
-    - target: {fileID: 146352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: m_Name
-      value: Perils
-      objectReference: {fileID: 0}
-    - target: {fileID: 11446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: targets.Array.data[0]
-      value: 
-      objectReference: {fileID: 832432803}
-    - target: {fileID: 11446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: targets.Array.data[1]
-      value: 
-      objectReference: {fileID: 245945978}
-    - target: {fileID: 11446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: targets.Array.data[2]
-      value: 
-      objectReference: {fileID: 1107675323}
-    - target: {fileID: 11446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-      propertyPath: GameController
-      value: 
-      objectReference: {fileID: 374924762}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-  m_RootGameObject: {fileID: 1539433730}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &667050332
 GameObject:
   m_ObjectHideFlags: 0
@@ -24268,6 +24192,82 @@ Prefab:
   m_RootGameObject: {fileID: 245945978}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1001 &1200567794
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -310
+      objectReference: {fileID: 0}
+    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 135.300003
+      objectReference: {fileID: 0}
+    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11427864, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: buildingSettlement
+      value: 
+      objectReference: {fileID: 1107675323}
+    - target: {fileID: 11427864, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: buildingSolarArray
+      value: 
+      objectReference: {fileID: 245945978}
+    - target: {fileID: 11427864, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: buildingAlgaeFarm
+      value: 
+      objectReference: {fileID: 832432803}
+    - target: {fileID: 146352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: m_Name
+      value: Perils
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: targets.Array.data[0]
+      value: 
+      objectReference: {fileID: 832432803}
+    - target: {fileID: 11446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: targets.Array.data[1]
+      value: 
+      objectReference: {fileID: 245945978}
+    - target: {fileID: 11446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: targets.Array.data[2]
+      value: 
+      objectReference: {fileID: 1107675323}
+    - target: {fileID: 11446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+      propertyPath: GameController
+      value: 
+      objectReference: {fileID: 374924762}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
+  m_RootGameObject: {fileID: 1539433730}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1206867187
 GameObject:
   m_ObjectHideFlags: 0
@@ -24528,7 +24528,7 @@ MeshCollider:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 127864, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-  m_PrefabInternal: {fileID: 663189983}
+  m_PrefabInternal: {fileID: 1200567794}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1221681781}
@@ -24547,7 +24547,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 427864, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-  m_PrefabInternal: {fileID: 663189983}
+  m_PrefabInternal: {fileID: 1200567794}
   m_GameObject: {fileID: 1221681780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 19, z: -15}
@@ -24560,7 +24560,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11427864, guid: c5748a629703c4c14a4d463c3179a2f5,
     type: 2}
-  m_PrefabInternal: {fileID: 663189983}
+  m_PrefabInternal: {fileID: 1200567794}
   m_GameObject: {fileID: 1221681780}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -24577,7 +24577,7 @@ ParticleRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2627800, guid: c5748a629703c4c14a4d463c3179a2f5,
     type: 2}
-  m_PrefabInternal: {fileID: 663189983}
+  m_PrefabInternal: {fileID: 1200567794}
   m_GameObject: {fileID: 1221681780}
   m_Enabled: 1
   m_CastShadows: 0
@@ -24608,7 +24608,7 @@ ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1227800, guid: c5748a629703c4c14a4d463c3179a2f5,
     type: 2}
-  m_PrefabInternal: {fileID: 663189983}
+  m_PrefabInternal: {fileID: 1200567794}
   m_GameObject: {fileID: 1221681780}
   Does Animate Color?: 1
   colorAnimation[0]:
@@ -24639,7 +24639,7 @@ EllipsoidParticleEmitter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1527800, guid: c5748a629703c4c14a4d463c3179a2f5,
     type: 2}
-  m_PrefabInternal: {fileID: 663189983}
+  m_PrefabInternal: {fileID: 1200567794}
   m_GameObject: {fileID: 1221681780}
   serializedVersion: 2
   m_Enabled: 1
@@ -30115,7 +30115,7 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 146352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-  m_PrefabInternal: {fileID: 663189983}
+  m_PrefabInternal: {fileID: 1200567794}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1539433731}
@@ -30131,7 +30131,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 446352, guid: c5748a629703c4c14a4d463c3179a2f5, type: 2}
-  m_PrefabInternal: {fileID: 663189983}
+  m_PrefabInternal: {fileID: 1200567794}
   m_GameObject: {fileID: 1539433730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -310, y: 135.300003, z: 0}
@@ -30145,14 +30145,14 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11446352, guid: c5748a629703c4c14a4d463c3179a2f5,
     type: 2}
-  m_PrefabInternal: {fileID: 663189983}
+  m_PrefabInternal: {fileID: 1200567794}
   m_GameObject: {fileID: 1539433730}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e5874185cbdf43a89daae2b5bc7e27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  likelihood: .400000006
+  likelihood: .800000012
   frequency: 10
   dustStorm: {fileID: 1221681780}
   asteroid: {fileID: 199148, guid: 94cb0ecd3ea57944d8b2e552d4dec9cb, type: 2}
