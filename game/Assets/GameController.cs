@@ -247,6 +247,7 @@ public class GameController : MonoBehaviour {
 	void UpdateUiMartianDays() {
 		int martianDaysPlayed = (int) Mathf.Floor(numSecondsPlayed / 60 / min2day);
 		//Dirty code thanks to Richard.. sorry
+
 		if (martianDaysPlayed == 7) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (12);}
 		if (martianDaysPlayed == 14) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (13);}
 		if (martianDaysPlayed == 21) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (14);}
