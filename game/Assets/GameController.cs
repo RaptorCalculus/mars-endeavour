@@ -30,6 +30,14 @@ public class GameController : MonoBehaviour {
 	float distance;
 	//public Transform target;
 
+
+	//Richard crummy achievements hack
+    bool week1 = false;
+    bool week2 = false;
+    bool week3 = false;
+    bool month = false;
+    bool year = false;
+
 	// Use this for initialization
 	void Start () {
 
@@ -248,11 +256,11 @@ public class GameController : MonoBehaviour {
 		int martianDaysPlayed = (int) Mathf.Floor(numSecondsPlayed / 60 / min2day);
 		//Dirty code thanks to Richard.. sorry
 
-		if (martianDaysPlayed == 7) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (12);}
-		if (martianDaysPlayed == 14) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (13);}
-		if (martianDaysPlayed == 21) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (14);}
-		if (martianDaysPlayed == 30) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (15);}
-		if (martianDaysPlayed == 687) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (16);}
+		if (martianDaysPlayed == 7 && week1 == false) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (12); week1 = true;}
+		if (martianDaysPlayed == 14 && week2 == false) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (13); week2 = true;}
+		if (martianDaysPlayed == 21 && week3 == false) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (14); week3 = true;}
+		if (martianDaysPlayed == 30 && month == false) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (15); month = true;}
+		if (martianDaysPlayed == 687 && year == false) {GameObject.Find ("GameController").GetComponent<ToastNotifications> ().ToastNotification (16); year = true;}
 		//
 		UiMartianDays.GetComponent<Text>().text = "Martian Days " + martianDaysPlayed.ToString();
 	}
