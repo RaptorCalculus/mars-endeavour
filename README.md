@@ -8,7 +8,7 @@ We took on the [Survivor: Mars Lava Tubes] (https://2015.spaceappschallenge.org/
 
 Lava Tubes
 -----------
-Ten astronauts land on Mars with ten robots, limited supplies and fuel. Their mission? To explore Mars, utilize its labyrith of lava tubes, and develop a self-sustaining colony for future emigrates of Earth. It's a dauntless task, building a colony with limited resources, while exploring the mysteries underground in the tubes. It won't be easy; many perils like dust storms and solar flares will threaten their survival. But the future of the human race is at stake. Can they survive?
+Ten astronauts land on Mars with ten robots, limited supplies and fuel. Their mission? To explore Mars, utilize its labyrith of lava tubes, and develop a self-sustaining colony for future emigrates of Earth. It's a dauntless task, building a colony with limited resources, while exploring the mysteries underground in the tubes. It won't be easy; many perils like dust storms and meteor showers will threaten their survival. But the future of the human race is at stake. Can they survive?
 
 Gameplay
 -----------
