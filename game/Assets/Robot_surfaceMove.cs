@@ -13,6 +13,7 @@ public class Robot_surfaceMove : MonoBehaviour {
 	public int repairVal = 1;
 	public float repairWait = 1;
 	float nextRepair = 0;
+	string tubeName;
 	int tube;
 	// Use this for initialization
 	void Start () {
@@ -79,6 +80,24 @@ public class Robot_surfaceMove : MonoBehaviour {
 				}
 				GameObject.Find ("GameController").GetComponent<GameController> ().EnterTube (tube, gameObject);
 		}
+
+		if (other.tag == "TubeExit") {
+			inTube = false;
+			gameObject.transform.GetChild (1).gameObject.SetActive (false);
+			moving = false;
+
+			if (other.name == "Exit1") {
+				tubeName = "LavaTube1";
+			}
+			if (other.name == "Exit2") {
+				tubeName = "LavaTube2";
+			}
+			if (other.name == "Exit3") {
+				tubeName = "LavaTube3";
+			}
+			GameObject.Find ("GameController").GetComponent<GameController> ().ExitTube (tubeName, gameObject);
+		}
+
 	}
 
 	void OnTriggerStay(Collider other){
