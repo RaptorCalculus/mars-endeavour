@@ -169,6 +169,18 @@ public class GameController : MonoBehaviour {
 
 	}
 
+	public void ExitTube(string tubeName, GameObject robot){
+		Debug.Log ("Trying to exit tube  " + tubeName);
+		CamToggleButton.SetActive(false);
+		CamToggler ();
+		//robot.transform.position = SpawnPoints[tube].transform.position;
+		GameObject exit = GameObject.Find (tubeName) as GameObject;
+		robot.transform.position = new Vector3 (exit.transform.position.x - 20, exit.transform.position.y, exit.transform.position.z);
+
+		//SwitchRobot (robot);
+		
+	}
+
 	public void SelectRobot (int num){ //legacy but didnt want to rename, wrapper for UI
 		SwitchRobot (Robots[num]);
 	}

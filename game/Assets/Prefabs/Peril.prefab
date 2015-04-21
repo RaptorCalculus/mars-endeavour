@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e5874185cbdf43a89daae2b5bc7e27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  likelihood: .400000006
+  likelihood: .800000012
   frequency: 10
   dustStorm: {fileID: 127864}
   asteroid: {fileID: 199148, guid: 94cb0ecd3ea57944d8b2e552d4dec9cb, type: 2}

@@ -29,7 +29,7 @@ public class Peril : MonoBehaviour {
 			if (peril == 0 && !dustStorm.activeSelf) {
 				Debug.Log("Duststorm begins!");
 				dustStorm.SetActive(true);
-				audio.PlayOneShot(warning);
+				//audio.PlayOneShot(warning);
 				warningNum = 0;
 				GameController.GetComponent<ToastNotifications>().WarnNotifications(warningNum);
 			}
@@ -37,7 +37,7 @@ public class Peril : MonoBehaviour {
 				
 				Debug.Log("Asteroid begins!");
 				
-				audio.PlayOneShot(warning);
+				//audio.PlayOneShot(warning);
 				
 				target = targets[Random.Range(0, targets.Length - 1)];
 				

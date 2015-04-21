@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &109210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 409210}
+  - 33: {fileID: 3309210}
+  - 65: {fileID: 6509210}
+  - 23: {fileID: 2309210}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &150746
 GameObject:
   m_ObjectHideFlags: 1
@@ -181,8 +199,8 @@ GameObject:
   - 65: {fileID: 6550746}
   - 23: {fileID: 2350754}
   m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
+  m_Name: Exit1
+  m_TagString: TubeExit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1179,6 +1197,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &409210
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109210}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .00899999961, y: .00549999997, z: .742399991}
+  m_LocalScale: {x: .0100000007, y: .0100000007, z: .0100000007}
+  m_Children: []
+  m_Father: {fileID: 450826}
+  m_RootOrder: 11
 --- !u!4 &450746
 Transform:
   m_ObjectHideFlags: 1
@@ -1317,12 +1347,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150766}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: .00899999961, y: .00549999997, z: .779999971}
-  m_LocalScale: {x: .0100000007, y: .0100000007, z: .0100000007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .00899999961, y: .00600000005, z: .802999973}
+  m_LocalScale: {x: .349999994, y: .00999999978, z: .00999999978}
   m_Children: []
   m_Father: {fileID: 450826}
-  m_RootOrder: 11
+  m_RootOrder: 13
 --- !u!4 &450768
 Transform:
   m_ObjectHideFlags: 1
@@ -1693,7 +1723,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150826}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1708,8 +1738,9 @@ Transform:
   - {fileID: 450818}
   - {fileID: 450856}
   - {fileID: 450808}
-  - {fileID: 450766}
+  - {fileID: 409210}
   - {fileID: 450848}
+  - {fileID: 450766}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &450828
@@ -2088,6 +2119,26 @@ Transform:
   - {fileID: 450778}
   m_Father: {fileID: 450850}
   m_RootOrder: 10
+--- !u!23 &2309210
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109210}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2350746
 Renderer:
   m_ObjectHideFlags: 1
@@ -2788,6 +2839,13 @@ Renderer:
   m_ScaleInLightmap: 2
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!33 &3309210
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109210}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &3350746
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -3176,6 +3234,18 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300004, guid: 7400c9690a4d7844bace350d59ec8f49, type: 3}
+--- !u!65 &6509210
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6550746
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -3183,7 +3253,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150766}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -3723,6 +3793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 20
+  respawnTimeSec: 180
 --- !u!114 &11498256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3735,6 +3806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 1
+  respawnTimeSec: 180
 --- !u!114 &11498258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3747,6 +3819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 1
+  respawnTimeSec: 180
 --- !u!114 &11498260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3759,6 +3832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 2
+  respawnTimeSec: 180
 --- !u!114 &11498262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3771,6 +3845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 1
+  respawnTimeSec: 180
 --- !u!114 &11498264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3783,6 +3858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 1
+  respawnTimeSec: 180
 --- !u!114 &11498266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3795,6 +3871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 1
+  respawnTimeSec: 180
 --- !u!114 &11498268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3807,6 +3884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 1
+  respawnTimeSec: 180
 --- !u!114 &11498270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3819,6 +3897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 1
+  respawnTimeSec: 180
 --- !u!114 &11498272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3831,6 +3910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 1
+  respawnTimeSec: 180
 --- !u!114 &11498274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3843,6 +3923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 4
+  respawnTimeSec: 180
 --- !u!114 &11498276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3855,6 +3936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 1
+  respawnTimeSec: 180
 --- !u!114 &11498278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3867,6 +3949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: 1
+  respawnTimeSec: 180
 --- !u!135 &13550746
 SphereCollider:
   m_ObjectHideFlags: 1
