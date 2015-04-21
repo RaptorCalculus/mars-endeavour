@@ -6,7 +6,7 @@ We took on the [Survivor: Mars Lava Tubes] (https://2015.spaceappschallenge.org/
 
 "Develop a game allowing players to explore lava tubes on Mars. Astronauts might one day use lava tubes for shelter from dust storms and space radiation, which are dangerous hazards on Mars. The lava tubes can also be used for exploring underground access to resources. The game could be searching for lava tubes with real data and/or building a simulated community within the lava tubes highly dependent on local resources. The challenge in developing this Space App will be in learning about lava tubes, how to access and utilize NASA’s Mars datasets, and how a future Martian might survive with minimal to no resupply from Earth via Massless Exploration."
 
-Screenshot:
+Screenshot
 -----------
 ![alt text](http://marsendeavour.com/screenshots/The_Mars_Endeavour_2015_04_20_20_09_52_827.jpeg "The Mars Endeavour")
 
